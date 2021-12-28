@@ -1,6 +1,4 @@
-import os
-
-from data.data_utils.data_manager import Data_Manager_Mnist, Data_Manager_Claro_Slices
+from src.data_utils.data_manager import Data_Manager_Claro_Slices
 from src.models.vae import VAE
 import tensorflow as tf
 
@@ -11,7 +9,7 @@ def main():
     # 2) Parametri di Train
 
     batch_size = 32
-    epochs = 1000
+    epochs = 100
     latent_dim = 2
 
     re_train = False  # set to true, se si vuole riaddestrare la rete. altrimente cambiare il nome dei pesi
